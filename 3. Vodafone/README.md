@@ -5,8 +5,7 @@ configure mediante un protocolo de enrutamiento OSPF (7 routers mínimo, 14 host
 distribuidos de la manera que usted considere prudente.).<br/>
 
 
-## ROUTER 0
-<br/>
+### ROUTER 0
 enable<br/>
 conf t<br/>
 interface serial 1/0<br/>
@@ -47,8 +46,7 @@ exit<br/>
 show ip route ospf<br/><br/>
 
 
-## ROUTER 1
-<br/>
+### ROUTER 1
 enable<br/>
 conf t<br/>
 interface fastethernet 0/0<br/>
@@ -67,8 +65,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-## ROUTER 2
-<br/>
+### ROUTER 2
 enable<br/>
 conf t<br/>
 interface fastethernet 0/0<br/>
@@ -88,8 +85,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-## ROUTER 3
-<br/>
+### ROUTER 3
 enable<br/>
 conf t<br/>
 interface fastethernet 0/0<br/>
@@ -109,8 +105,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-## ROUTER 4
-<br/>
+### ROUTER 4
 enable<br/>
 conf t<br/>
 interface fastethernet 0/0<br/>
@@ -130,8 +125,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-## ROUTER 5
-<br/>
+### ROUTER 5
 enable<br/>
 conf t<br/>
 interface fastethernet 0/0<br/>
@@ -151,8 +145,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-## ROUTER 6
-<br/>
+### ROUTER 6
 enable<br/>
 conf t<br/>
 interface fastethernet 0/0<br/>
@@ -172,8 +165,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-## ROUTER 7
-<br/>
+### ROUTER 7
 enable<br/>
 conf t<br/>
 interface fastethernet 0/0<br/>
