@@ -1,4 +1,4 @@
-# Red de telefonica
+# Red de Vodafone
 
 Vodafone le pide que configure una red con una topología Hub and Spoke, y que se
 configure mediante un protocolo de enrutamiento OSPF (7 routers mínimo, 14 hosts,
