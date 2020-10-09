@@ -5,7 +5,7 @@ configure mediante un protocolo de enrutamiento OSPF (7 routers mínimo, 14 host
 distribuidos de la manera que usted considere prudente.).<br/>
 
 
-##ROUTER 0
+## ROUTER 0
 <br/>
 enable<br/>
 conf t<br/>
@@ -47,7 +47,7 @@ exit<br/>
 show ip route ospf<br/><br/>
 
 
-##ROUTER 1
+## ROUTER 1
 <br/>
 enable<br/>
 conf t<br/>
@@ -67,7 +67,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-##ROUTER 2
+## ROUTER 2
 <br/>
 enable<br/>
 conf t<br/>
@@ -88,7 +88,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-##ROUTER 3
+## ROUTER 3
 <br/>
 enable<br/>
 conf t<br/>
@@ -109,7 +109,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-##ROUTER 4
+## ROUTER 4
 <br/>
 enable<br/>
 conf t<br/>
@@ -130,7 +130,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-##ROUTER 5
+## ROUTER 5
 <br/>
 enable<br/>
 conf t<br/>
@@ -151,7 +151,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-##ROUTER 6
+## ROUTER 6
 <br/>
 enable<br/>
 conf t<br/>
@@ -172,7 +172,7 @@ exit<br/>
 
 show ip route ospf<br/><br/>
 
-##ROUTER 7
+## ROUTER 7
 <br/>
 enable<br/>
 conf t<br/>
