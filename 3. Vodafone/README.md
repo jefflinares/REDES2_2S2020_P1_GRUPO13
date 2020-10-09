@@ -6,20 +6,35 @@ distribuidos de la manera que usted considere prudente.).
 
 ---------------------------------------ROUTER 1
 enable
+
 conf t
+
 interface fastethernet 0/0
+
 ip address 192.168.1.1 255.255.255.0
+
 no shut
+
 exit
+
 interface serial 2/0
+
 ip address 10.10.10.2 255.255.255.252
+
 no shut
+
 exit
+
 router ospf 1
+
 network 192.168.1.0 0.0.0.255 area 1
+
 network 10.10.10.0 0.0.0.3 area 1
+
 exit
+
 exit
+
 
 show ip route ospf
 
