@@ -29,7 +29,6 @@ no shut<br/><br/>
 interface serial 7/0<br/>
 ip address 10.10.10.25 255.255.255.252<br/>
 no shut<br/><br/>
-<br/>
 
 router ospf 1<br/>
 network 192.168.0.0 0.0.0.255 area 1<br/>
