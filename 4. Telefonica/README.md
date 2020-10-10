@@ -277,6 +277,27 @@ DHCP
 
 ```
 
+### R1
+
+```
+ena
+conf t
+int se0/0/1
+ip address 172.25.0.2 255.255.255.0
+clock rate 128000
+no shut
+end
+
+conf t
+router rip
+version 2
+network 172.25.0.0
+no auto-summary
+end
+
+
+``
+
 ### R34
 
 ```
@@ -531,5 +552,22 @@ no auto-summary
 end
 
 show ip route
+
+
+
+conf t
+int se0/3/1
+ip address 172.25.0.1 255.255.255.0
+clock rate 128000
+no shut
+end
+
+conf t
+router rip
+version 2
+network 172.25.0.0
+no auto-summary
+end
+
 
 ```
