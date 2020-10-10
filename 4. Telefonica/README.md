@@ -310,13 +310,22 @@ conf t
 router rip
 version 2
 network 192.168.45.0
-network 192.168.46.0
-network 192.168.47.0
-network 192.168.48.0
 network 172.16.0.0
 network 172.17.0.0
 network 172.18.0.0
 no auto-summary
+end
+
+
+conf t
+int gig0/0
+no shut
+end
+
+
+conf t
+int gig0/1
+no shut
 end
 
 ```
@@ -524,127 +533,3 @@ end
 show ip route
 
 ```
-
-
-
-
-<!-- Esto no se si esta bien -->
-<!-- ### R1
-
-```
-ena
-vlan database
-vlan 10 name RHUMANOS
-vlan 20 name CONTABILIDAD
-vlan 30 name VENTAS
-vlan 40 name DESARROLLO
-exit
-show vlan
-
------------------
-conf t
-int fa0/0
-switchport trunk native vlan 99
-switchport trunk allowed vlan 10,20,30,40,99
-switchport mode trunk
-int gig0/2
-switchport trunk native vlan 99
-switchport trunk allowed vlan 10,20,30,40,99
-switchport mode trunk
-int gig0/3
-switchport trunk native vlan 99
-switchport trunk allowed vlan 10,20,30,40,99
-switchport mode trunk
-exit
-exit
-------------
-
-conf t
-ip routing
-interface vlan 10
-ip address 192.168.45.1 255.255.255.0
-no shutdown
-exit
-interface vlan 20
-ip address 192.168.46.1 255.255.255.0
-no shutdown
-exit
-interface vlan 30
-ip address 192.168.47.1 255.255.255.0
-no shutdown
-exit
-interface vlan 40
-ip address 192.168.48.1 255.255.255.0
-no shutdown
-exit
-exit
-
-show ip route
-
-conf t
-ip dhcp pool vlan10
-network 192.168.45.0 255.255.255.0
-default-router 192.168.45.1
-dns-server 8.8.8.8
-dns-server 8.8.4.4
-exit
-ip dhcp pool vlan20
-network 192.168.46.0 255.255.255.0
-default-router 192.168.46.1
-dns-server 8.8.8.8
-dns-server 8.8.4.4
-exit
-ip dhcp pool vlan30
-network 192.168.47.0 255.255.255.0
-default-router 192.168.47.1
-dns-server 8.8.8.8
-dns-server 8.8.4.4
-exit
-ip dhcp pool vlan40
-network 192.168.48.0 255.255.255.0
-default-router 192.168.48.1
-dns-server 8.8.8.8
-dns-server 8.8.4.4
-exit
-end
-show ip dhcp pool vlan10
-show ip dhcp pool vlan20
-show ip dhcp pool vlan30
-show ip dhcp pool vlan40
-
-```
-
-### R2
-
-```
-ena
-conf t
-vlan 10
-name RHUMANOS
-vlan 20
-name CONTABILIDAD
-vlan 30
-name VENTAS
-vlan 40
-name DESARROLLO
-exit
-exit
-show vlan
-
-conf t
-int fa0
-switchport trunk native vlan 99
-switchport trunk allowed vlan 10,20,30,40,99
-switchport mode trunk
-int fa1
-switchport trunk native vlan 99
-switchport trunk allowed vlan 10,20,30,40,99
-switchport mode trunk
-int fa2
-switchport trunk native vlan 99
-switchport trunk allowed vlan 10,20,30,40,99
-switchport mode trunk
-exit
-exit
-
-``` -->
